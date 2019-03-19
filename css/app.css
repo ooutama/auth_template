@@ -1,0 +1,227 @@
+img{
+    max-width: 100%;
+}
+li, ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    background-color: #f0f2f5;
+}
+body {
+    /*color: #44525f;*/
+    color: #000;
+}
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: Nunito,HelveticaNeue,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+a, a:focus, a:hover {
+    text-decoration: none;
+    color: #2647ea
+}
+h3 {
+    font-size: 24px;
+}
+p {
+    margin: 0 0 10px;
+}
+.text-center{
+    text-align: center;
+}
+.sign__logo{
+    margin: 35px auto;
+}
+.sign__card {
+    background-color: #fff;
+    margin: 25px auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    box-shadow: 0 3px 5px rgba(0,0,0,.05);
+}
+.sign__card .sign__panel {
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease;
+    opacity: 0;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+.sign__card .sign__panel.active {
+    opacity: 1;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+.sign__panel .sign__heading > .sign__title{
+    font-weight: 700;
+    margin-top: 0;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: 200ms all linear;
+}
+.btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.btn-block {
+    display: block;
+    width: 100%;
+}
+.btn-primary {
+        color: #fff;
+    background-color: #2647ea;
+    border-color: #2647ea;
+}
+.sign__card .btn-facebook {
+    background: #3b5998;
+}
+.sign__card .btn-twitter {
+    background: #00aced;
+}
+.sign__card .btn-google {
+    background: #c32f10;
+}
+.sign__card .btn:hover{
+    opacity: .8
+}
+.btn-facebook>svg,
+.btn-twitter>svg,
+.btn-google>svg{
+    fill: #fff;
+    width: auto;
+    height: 18px;
+}
+.sign__bar{
+    position: relative;
+    font-size: 1.5em;
+    color: #aaa;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+.sign__bar hr{
+    background-color: #cdcdcd;
+    height: 1px;
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+}
+.sign__bar span{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -.75em;
+    margin-left: -1.5em;
+    background-color: #fff;
+    width: 3em;
+    text-align: center;
+}
+.form-control{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 15px;
+    background-color: #f6f6f6;
+    color: #333;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: 0;
+    box-sizing: border-box;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.form-control.__hbb{
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-control.__htb{
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.form-control:focus {
+    border-color: #4f77ff;
+    z-index: 2;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+.form-control.__lg{
+    font-size: 18px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 12px 22px;
+    border-radius: 3px;
+}
+.form-control.__wt{
+    background-color: #fff;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,.1), 0 0 2px 0 rgba(0,0,0,.1);
+    border-color: #bcc2ce;
+}
+.form-control.__rd{
+    border-radius: 100px;
+}
+.form-control.__sm{
+    height: 32px;
+    padding: 8px 32px 8px 12px;
+    font-size: 14px;
+}
+.form-control.__wt:focus{
+    transition: 200ms all ease;
+    border-color: #4f77ff;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.password__mask{
+    position: relative;
+}
+.password__mask .password__toggle {
+    color: #ccc;
+    position: absolute;
+    z-index: 2;
+     top: 12px;
+    right: 15px;
+}
+.remember{
+    align-items: center;
+    margin-bottom: 10px
+}
+label.checkbox{
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    color: #666;
+    margin: 10px 0px;
+}
+.forgot__password {
+    text-align: right;
+    margin-top: 10px;
+}
+.terms__policy{
+    color: #777;
+    font-size: 85%;
+}
